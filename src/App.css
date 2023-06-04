@@ -19,18 +19,19 @@ html, body {
   background-color: black;
   color: white;
   font-family: 'Roboto', sans-serif;
-  max-width: 100%;
   padding: 0;
 }
 
-.widthControl {
-  max-width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
 /* flex and containers */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
 .player-container {
   padding-top: 3rem;
@@ -41,39 +42,46 @@ html, body {
 }
 
 .flex-container {
-  /* padding-top: 90px; */
   display: flex;
   flex-flow: row wrap;
   gap: 1.5em;
-  padding-bottom: 108px;
+  padding-bottom: 3rem;
   align-items: center;
-  
+  justify-content: space-between;
 }
 
 .nav-flex-container {
-  margin: 0;
   font-size: 1.25em;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
+#main {
+  flex-grow: 1;
+}
 
-
+.footer {
+  flex-shrink: 0;
+}
 /* nav ul {
   display: flex;
   gap: 1em;
 } */
 
 .nav-link {
-  color: white;
   padding: 1em;
 }
 
 #main-menu {
   position:absolute;
-  right: 10%;
+  right: 100px;
+}
+
+#footer-menu {
+  position:absolute;
+  right: 100px;
 }
 
 #main-menu ul li:first-child {
@@ -84,12 +92,12 @@ ul {
   list-style-type: none;
 }
 
-#main-menu ul li {
+#main-menu ul {
   margin: 0;
-  font-size: 1.25em;
+  font-size: 1.15em;
   text-decoration: none;
+  list-style-type: none;
 }
-
 
 .flex-item1 {
   max-width: fit-content;
@@ -98,7 +106,6 @@ ul {
 }
 
 .basic-container {
-  /* padding-top: 90px; */
   margin-left: auto;
   margin-right: auto;
   text-align:center;
@@ -118,16 +125,8 @@ ul {
   padding: .6em;
 }
 
-
 .nav-link {
   padding: 1em;
-}
-
-nav {
-  margin: 0;
-  font-size: 1.25em;
- 
-  text-decoration: none;
 }
 
 nav ul li {
@@ -140,12 +139,16 @@ nav ul li {
 
 
 #header a {
-  color: white;
+  color: #FF9803;
   text-decoration: none;
 }
 
 #header a:hover {
   color: #F44236;
+}
+
+#logoBR {
+  padding-left: 100px;
 }
 
 #mainAbout {
@@ -160,7 +163,6 @@ nav ul li {
   line-height: 2em;
 }
 
-/* About page */
 
 /* footer styles */
 
@@ -185,22 +187,16 @@ nav ul li {
   font-size: 18px;
   margin: 0;
   display: inline-block;
-  font-size: 1.25em;
   padding-left: 5.31em;
-  padding-bottom: 3em;
+  padding-bottom: 1em;
 }
 
 #footer-menu ul li:first-child {
   padding-left: 0;
 }
 
-footer p {
-  padding: 0%;
-  padding-bottom: 4em;
-}
-
 #copywrite {
-  bottom: -125px;
+  padding-left: 100px;
   font-size: .8em;
 }
 
@@ -263,175 +259,4 @@ h4 {
 
 .padding-reset {
   padding: 0%;
-}
-
-
-/* responsive media queries */
-
-@media screen and (max-width: 990px) {
-  #media-menu {
-    display: inline-block;
-    position: absolute;
-    top: -4em;
-    right: 0;
-  }
-
-  .mediaLogos {
-    display: flex;
-    margin: 0 4px;
-    gap: 8px;
-  }
-
-  .projectImage {
-    width: 100%;
-  }
-
-  #header {
-    display: block;
-    max-width: 80%;
-  }
-}
-
-@media screen and (max-width:767px) {
-  nav ul li {
-    gap: .6em;
-  }
-
-  #media-menu {
-    display: inline-block;
-    position: absolute;
-    top: -4em;
-    right: 0;
-  }
-
-  .mediaLogos {
-    display: flex;
-    margin: 0 4px;
-    gap: 8px;
-  }
-
-  #bigPortrait {
-    margin-top: 20px;
-  }
-
-  #skillDescription p {
-    position: relative;
-    bottom: 35px;
-    /* text-align: center; */
-    margin-left: auto;
-    margin-right: auto;
-    padding: 12px;
-    line-height: 1.8em;
-  }
-
-  #footer-menu ul li {
-    font-size: 1.1em;
-    padding-left: 1.25em;
-    padding-top: 2em;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-  .flex-container {
-    display: block;
-  }
-
-  .flex-item1 {
-    flex: 1 0 0;
-  }
-
-  .flex-item2 {
-    margin-top: 2em;
-    flex: 1 0 0;
-  }
-}
-
-@media screen and (max-width: 690px) {
-  #media-menu li > a > img {
-    width: 20px;
-    padding: .4em;
-  }
-
-  nav {
-    position: absolute;
-    top: 5%;
-    margin: 0;
-    display: inline-block;
-    font-size: .8em;
-    padding-top: 5.1em;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  nav ul li {
-    gap: .6em;
-  }
-}
-
-@media screen and (max-width: 590px) {
-  h3 {
-    margin-top: 20px;
-  }
-
-  nav {
-    position: absolute;
-    top: 5%;
-    margin: 0;
-    display: inline-block;
-    font-size: .8em;
-    padding-top: 5.1em;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  nav ul li {
-    gap: .6em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #media-menu {
-    display: inline-block;
-    position: absolute;
-    top: -6em;
-    right: 0;
-  }
-
-  .mediaLogos {
-    display: flex;
-    margin: 0 4px;
-    gap: 8px;
-  }
-
-  nav {
-    position: absolute;
-    top: 0;
-    margin: 0;
-    display: inline-block;
-    font-size: .8em;
-    padding-top: 5.1em;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  nav ul li {
-    gap: .6em;
-  }
-
-  #heroText {
-    margin-top: 225px;
-    max-width: 557px ;
-  }
-
-  #heroText {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-
-  .flex-container {
-    margin-top: 0;
-    padding-top: 0;
-  }
 }
