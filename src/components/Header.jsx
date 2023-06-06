@@ -6,7 +6,7 @@ import Nav from "./Nav";
 
 export default function Header() {
   return (
-    <header className="widthControl flex-container" id="header">  
+    <header className="flex-container" id="header">  
     <Nav />
     </header>
   );

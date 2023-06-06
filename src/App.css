@@ -110,7 +110,7 @@ ul {
   margin-right: auto;
   text-align:center;
   justify-content: center;
-  padding: 6em 0 ;
+  padding: 2rem 0 ;
 }
 
 .basic-item {
@@ -151,6 +151,10 @@ nav ul li {
   padding-left: 100px;
 }
 
+.main-title {
+  padding-top: 3rem;
+}
+
 #mainAbout {
   text-align: left;
   max-width: 75%;
@@ -162,8 +166,46 @@ nav ul li {
   text-indent: 21px;
   line-height: 2em;
 }
+/* 
+Host stuff */
 
+.hostTitle {
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 400;
+}
 
+.hostImage {
+width: 300px;
+}
+
+/* segment data stuff */
+
+.dailySegment {
+  font-weight: 500;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+
+}
+
+.segmentImage {
+border-radius: 12px;
+}
+
+.segmentTitle {
+  letter-spacing: .2rem;
+  font-weight: 400;
+  padding: 1.5rem;
+}
+
+.segmentHeadline {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.lego-block {
+  padding-top: 4rem;
+}
 /* footer styles */
 
 #goodbye {
