@@ -9,6 +9,7 @@ import MainBody from './components/MainBody';
 
 //import page content
 import Home from "./routes/Home";
+import About from "./routes/About";
 
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/about" element={<About />} />
+          {/* <Route path="/contact" element={<Contact />} />  */}
         </Routes>
         <Footer />
       </BrowserRouter>

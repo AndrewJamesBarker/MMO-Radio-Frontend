@@ -12,7 +12,7 @@ export default function Nav() {
     <ul>
         <Link to="/" className="nav-link">RADIO</Link>
         <Link to="/About" className="nav-link">ABOUT</Link>
-        <Link to="/contact" className="nav-link">CONTACT</Link>
+        {/* <Link to="/contact" className="nav-link">CONTACT</Link> */}
       </ul>
    </div>
 

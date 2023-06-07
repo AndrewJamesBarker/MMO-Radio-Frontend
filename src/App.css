@@ -55,12 +55,11 @@ html, body {
 }
 
 .nav-flex-container {
-  font-size: 1.25em;
+  font-size: 1em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 #main {
@@ -84,7 +83,7 @@ html, body {
 
 #footer-menu {
   position:absolute;
-  right: 100px;
+  right: 130px;
 }
 
 #main-menu ul li:first-child {
@@ -115,7 +114,6 @@ ul {
   justify-content: center;
   padding: 2rem 0 ;
 }
-
 
 .basic-item {
   padding: 2.5em;
@@ -190,7 +188,7 @@ audio {
   background-color: black;
   border: 2px solid #FF9803;
   border-radius: 12px;
-  width: 400px; /* Adjust the width as needed */
+  width: 65%; /* Adjust the width as needed */
   margin-bottom: 3rem;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
 }
@@ -371,4 +369,10 @@ h4 {
 
 .padding-reset {
   padding: 0%;
+}
+
+
+
+@media (max-width: 590px) {
+
 }
