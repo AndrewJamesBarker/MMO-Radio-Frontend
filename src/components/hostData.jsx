@@ -27,7 +27,7 @@ return (
         <h2 className="hostTitle">Meet Your <span className="orange-text">HOSTS!</span></h2>
     {hosts.map(item => (
         <div key={item.id}>
-            <div className="basic-item">
+            <div className="basic-item host-container">
                 <h2>{item.name}</h2>
                 <img  src={`http://localhost:8888/storage/${item.profile_pic}`} className="hostImage" width="300"></img>
                 <p>'{item.bio}'</p>

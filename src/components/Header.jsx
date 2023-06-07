@@ -6,7 +6,7 @@ import Nav from "./Nav";
 
 export default function Header() {
   return (
-    <header className="flex-container" id="header">  
+    <header className=" border-box" id="header">  
     <Nav />
     </header>
   );

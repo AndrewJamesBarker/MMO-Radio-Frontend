@@ -33,13 +33,14 @@ const content = segmentDataObject.content;
 
 return (
   <div className="basic-container">
-      <img className="lego-block" src="images/orange_lego.png" width="100" alt="an orange six by two piece of lego"></img>
-    <h1 className="dailySegment">Your daily <span className="orange-text">SEGMENT </span></h1>
+     
+    <h1 className="dailySegment">Featured <span className="orange-text">SEGMENT </span></h1>
+    <img className="lego-block" src="images/orange_lego.png" width="100" alt="an orange six by two piece of lego"></img>
     <div key={recentSegment.id}>
       <h2 className="segmentTitle">'{recentSegment.title}'</h2>
-      <img className="segmentImage" src={`http://localhost:8888/storage/${recentSegment.image}`} width="350"></img>
+      <img className="segmentImage" src={`http://localhost:8888/storage/${recentSegment.image}`} width="550"></img>
       <h4 className="segmentHeadline">{headline}</h4>
-      <p>
+      <p className="segment-content">
         '{joke || content}'
       </p>
     </div>
