@@ -10,7 +10,6 @@ export default function AboutBody() {
           </h1>
           <p>Streaming live, now!</p>
           <div className='player-container'>
-            <AudioPlayer />
           </div>
         </main>
       </div>
