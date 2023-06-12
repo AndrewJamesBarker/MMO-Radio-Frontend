@@ -1,5 +1,7 @@
 import {useState, useEffect} from "react";
 
+// retrieve and display segment data from reporter cms backend
+
 export default function SegmentData() {
   const [segments, setSegments] = useState([]);
 

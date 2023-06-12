@@ -1,7 +1,7 @@
 import React from 'react';
 import dotenv from 'dotenv';
 
-
+// retireve and play audio content from producer back endianness, via icecast
 
 const AudioPlayer = () => {
 // const streamStatsURL = process.env.REACT_APP_STREAM_DATA;

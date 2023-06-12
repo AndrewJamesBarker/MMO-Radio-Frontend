@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 
+// retrieve and display host data from reporter cms backend
 
 export default function HostData() {
 
