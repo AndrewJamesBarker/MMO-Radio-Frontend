@@ -37,7 +37,7 @@ return (
   <div className="basic-container segmentSection">
      
     <h1 className="dailySegment">Featured <span className="orange-text">SEGMENT </span></h1>
-    <img className="lego-block" src="images/orange_lego.png" width="100" alt="an orange six by two piece of lego"></img>
+    {/* <img className="lego-block" src="images/orange_lego.png" width="100" alt="an orange six by two piece of lego"></img> */}
     <div key={recentSegment.id}>
       <h2 className="segmentTitle">'{recentSegment.title}'</h2>
       <img className="segmentImage" src={`http://localhost:8888/storage/${recentSegment.image}`} width="550"></img>

@@ -76,9 +76,10 @@ html, body {
 
 
 #main-menu {
-  position:absolute;
+  position: absolute;
   right: 125px;
 }
+
 
 #footer-menu {
   position:absolute;
@@ -134,6 +135,10 @@ nav ul li {
   gap: 1em;
 }
 
+a {
+  color: white;
+}
+
 .activeLink{
   background: none;
 }
@@ -173,6 +178,11 @@ nav ul li {
   margin-left: auto;
   margin-right: auto;
   width: 65%;
+}
+
+.devDiv {
+  padding-top: 2rem;
+  font-size: 1rem;
 }
 
 /* audio stuff */
@@ -227,10 +237,10 @@ width: 45%;
 }
 
 /* segment data stuff */
-
+/* 
 .segmentSection {
-  margin-top: 3rem;
-}
+  margin-top: 1.5rem;
+} */
 
 .dailySegment ,.hostTitle {
   background-color: black;
@@ -401,7 +411,7 @@ h4 {
 #main-menu {
   margin-left: auto;
   margin-left: auto;
-  display: absolute;
+  position: absolute;
 
 }
 

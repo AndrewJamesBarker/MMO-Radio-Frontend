@@ -12,8 +12,13 @@ export default function AboutBody() {
           </h1>
           <p>Streaming live, now!</p>
           <img className="station-image" src="images/radioStation.png" width='300' alt='image of a lego radiostation'></img>
-          <h2>Andrew Barker</h2>
-          <p className='maker-bio'>Andrew Barker is a Web developer, musician, and proud Brick-MMO Radio web application co-creator.  Combining music and development, Brick-MMO Radio merges two of Andrew’s favourite subjects, making him the ideal person to ensure Brick-MMO Radio’s listeners the best Web Radio experience possible.</p>
+          <h2>Developers</h2>
+          <div className="devDiv">
+            <p><a href="https://www.shavinsingh.tech/" target="_blank" rel="noopener noreferrer">Shavin Singh</a></p>
+            <p><a href="https://abarksbytes.com/" target="_blank" rel="noopener noreferrer">Andrew Barker</a></p>
+          </div>
+          
+
         </main>
       </div>
     );
