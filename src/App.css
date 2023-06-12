@@ -167,18 +167,13 @@ nav ul li {
   padding-bottom: 7rem;
 }
 
-#mainAbout {
-  text-align: left;
-  max-width: 75%;
+.maker-bio {
+  font-size: 1rem;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
+  width: 65%;
 }
-
-#mainAbout p {
-  text-indent: 21px;
-  line-height: 2em;
-}
-
 
 /* audio stuff */
 
@@ -234,7 +229,7 @@ width: 45%;
 /* segment data stuff */
 
 .segmentSection {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .dailySegment ,.hostTitle {
@@ -380,6 +375,13 @@ h4 {
   padding: 0%;
 }
 
+
+/* image stuff */
+
+.station-image {
+  margin-top: 10rem;
+}
+
 @media screen and (max-width: 655px) {
 
 
@@ -469,6 +471,11 @@ padding: .8rem;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 36rem;
+  }
+
+  .station-image {
+    margin-top: 10rem;
+    width: 200px;
   }
 }
 

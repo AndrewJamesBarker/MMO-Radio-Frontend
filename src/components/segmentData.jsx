@@ -31,6 +31,8 @@ const headline = segmentDataObject.headline;
 const joke = segmentDataObject.joke;
 const content = segmentDataObject.content;
 
+// lego block image from adobe stock
+
 return (
   <div className="basic-container segmentSection">
      
