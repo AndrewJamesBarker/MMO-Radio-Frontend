@@ -26,9 +26,9 @@ const AudioPlayer = () => {
   const [trackTitle, setTracktitle] = useState(null);
 
   useEffect(() => {
-    fetchAudioMetaData();
-    // fetchPlayerMetaData();
-  }, [trackTitle, listenerCount]);
+    const intervalId = setInterval(fetchAudioMetaData, 5000);
+    return () => clearInterval(intervalId);
+  }, []);
   
   const fetchAudioMetaData = async () => {
     try {
