@@ -17,25 +17,25 @@ const AudioPlayer = () => {
   const [listenerCount, setListenerCount] = useState(null);
   const [trackTitle, setTracktitle] = useState(null);
 
-  useEffect(() => {
-    const intervalId = setInterval(fetchAudioMetaData, 5000);
-    return () => clearInterval(intervalId);
-  }, []);
+  // useEffect(() => {
+  //   const intervalId = setInterval(fetchAudioMetaData, 5000);
+  //   return () => clearInterval(intervalId);
+  // }, []);
   
-  const fetchAudioMetaData = async () => {
-    try {
-      const response = await fetch(dataUrl);
-      const data = await response.json();
-      const listeners = data.icestats.source.listeners;
-      const title = data.icestats.source.title;
+  // const fetchAudioMetaData = async () => {
+  //   try {
+  //     const response = await fetch(dataUrl);
+  //     const data = await response.json();
+  //     const listeners = data.icestats.source.listeners;
+  //     const title = data.icestats.source.title;
 
-      setListenerCount(listeners);
-      setTracktitle(title);
+  //     setListenerCount(listeners);
+  //     setTracktitle(title);
 
-    } catch (error) {
-      console.error('error fetching audio data', error);
-    }
-  }
+  //   } catch (error) {
+  //     console.error('error fetching audio data', error);
+  //   }
+  // }
 // this function woyld be for retrieving some metadata directly from within the stream itself,
 // not the alternate api endpoint currently in use 
 
