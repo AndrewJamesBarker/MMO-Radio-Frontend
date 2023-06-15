@@ -33,7 +33,7 @@ const AudioPlayer = () => {
       setTracktitle(title);
 
     } catch (error) {
-      console.error('error fetching audo data', error);
+      console.error('error fetching audio data', error);
     }
   }
 // this function woyld be for retrieving some metadata directly from within the stream itself,
