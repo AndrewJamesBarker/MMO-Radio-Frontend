@@ -1,5 +1,4 @@
 
-import dotenv from 'dotenv';
 import React, { useState, useEffect, useRef } from 'react';
 
 // Retrieve and play audio content from producer back end CMS, via icecast
@@ -8,18 +7,17 @@ import React, { useState, useEffect, useRef } from 'react';
 // currently grabbing the amount of active listeners, and the title of what is currently 
 // playing.
 
-// potential url variables from api endpoints (in .env)
+// RADIO_HOST=http://radio.brickmmo.com:8000;
+// var host = process.env.RADIO_HOST + "/radio.mp3";
 
-// const streamStatsURL = process.env.REACT_APP_STREAM_DATA;
-// const audioStreamURL = process.env.REACT_APP_AUDIO_STREAM;
-
-
-// http://singhmansingh.games:8000/brickmmo-radio.mp3
-
+// data url http://radio.brickmmo.com:8000/status-json.xsl
 
 const AudioPlayer = () => {
-  const audioUrl = 'http://singhmansingh.games:8000/brickmmo-radio.mp3'
-  const dataUrl = 'http://singhmansingh.games:8000/status-json.xsl'
+
+  const audioUrl = import.meta.env.VITE_RADIO_HOST;
+  const dataUrl = import.meta.env.VITE_STREAM_DATA;
+  // const audioUrl = 'http://radio.brickmmo.com:8000/radio.mp3'
+  // const dataUrl = 'http://radio.brickmmo.com:8000/status-json.xsl'
   const audioRef = useRef(null);
   const [metadata, setMetadata] = useState(null);
   const [listenerCount, setListenerCount] = useState(null);
