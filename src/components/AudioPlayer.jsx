@@ -7,17 +7,11 @@ import React, { useState, useEffect, useRef } from 'react';
 // currently grabbing the amount of active listeners, and the title of what is currently 
 // playing.
 
-// RADIO_HOST=http://radio.brickmmo.com:8000;
-// var host = process.env.RADIO_HOST + "/radio.mp3";
-
-// data url http://radio.brickmmo.com:8000/status-json.xsl
 
 const AudioPlayer = () => {
 
   const audioUrl = import.meta.env.VITE_RADIO_HOST;
   const dataUrl = import.meta.env.VITE_STREAM_DATA;
-  // const audioUrl = 'http://radio.brickmmo.com:8000/radio.mp3'
-  // const dataUrl = 'http://radio.brickmmo.com:8000/status-json.xsl'
   const audioRef = useRef(null);
   const [metadata, setMetadata] = useState(null);
   const [listenerCount, setListenerCount] = useState(null);
