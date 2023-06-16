@@ -44,7 +44,7 @@ const AudioPlayer = () => {
   return (
     <div className="basic-container player-container">
       <audio ref={audioRef} controls>
-        <source src='https://radio.brickmmo.com:8000/radio.mp3' type="audio/mpeg" />
+        <source src={audioUrl} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
       <div>
