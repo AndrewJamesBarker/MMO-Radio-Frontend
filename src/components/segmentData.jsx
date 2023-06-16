@@ -24,8 +24,6 @@ export default function SegmentData() {
     return <div></div>;
   }
 
-
-
 const recentSegment = segments[0];
 
 const segmentDataObject = JSON.parse(recentSegment.segment_data);
@@ -42,7 +40,7 @@ return (
     {/* <img className="lego-block" src="images/orange_lego.png" width="100" alt="an orange six by two piece of lego"></img> */}
     <div key={recentSegment.id}>
       <h2 className="segmentTitle">'{recentSegment.title}'</h2>
-      <img className="segmentImage" src={`https://reporters.brickmmo.com/storage/${recentSegment.image}`} width="550"></img>
+      <img className="segmentImage" src={`https://reporters.brickmmo.com/storage/${recentSegment.image}`} width="450"></img>
       {/* <h4 className="segmentHeadline">{headline}</h4> */}
       <p className="segment-content">
         '{joke || content}'
