@@ -9,7 +9,7 @@ const [hosts, setHosts] = useState([]);
 useEffect(() => {
     const getHosts = async () => {  
     try {
-        const response = await fetch('http://localhost:8888/api/hosts');
+        const response = await fetch('https://reporters.brickmmo.com/api/hosts');
         const data = await response.json();
         setHosts(data);
     } catch (error) {

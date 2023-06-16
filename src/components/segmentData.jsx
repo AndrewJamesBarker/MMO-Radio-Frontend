@@ -8,7 +8,7 @@ export default function SegmentData() {
   useEffect(()=> {
     const getSegments = async () => {
       try{
-        const response = await fetch('http://localhost:8888/api/segments');
+        const response = await fetch('https://reporters.brickmmo.com/api/segments');
         const data = await response.json();
         setSegments(data);
       }
