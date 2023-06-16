@@ -30,7 +30,7 @@ return (
             <div key={item.id}>
                 <div className="host-container">
                     <h2 className="host-name">{item.name}</h2>
-                    <img className="hostImage" src={`https://reporters.brickmmo.com/api/storage/${item.profile_pic}`} width="300"></img>
+                    <img className="hostImage" src={`https://reporters.brickmmo.com/storage/${item.profile_pic}`} width="300"></img>
                     <p className="host-bio">'{item.bio}'</p>
                 </div>
             </div>
