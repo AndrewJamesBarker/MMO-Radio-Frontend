@@ -42,7 +42,7 @@ return (
     {/* <img className="lego-block" src="images/orange_lego.png" width="100" alt="an orange six by two piece of lego"></img> */}
     <div key={recentSegment.id}>
       <h2 className="segmentTitle">'{recentSegment.title}'</h2>
-      <img className="segmentImage" src={`https://reporters.brickmmo.com/api/storage/${recentSegment.image}`} width="550"></img>
+      <img className="segmentImage" src={`https://reporters.brickmmo.com/api/${recentSegment.image}`} width="550"></img>
       {/* <h4 className="segmentHeadline">{headline}</h4> */}
       <p className="segment-content">
         '{joke || content}'
