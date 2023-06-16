@@ -39,8 +39,7 @@ const AudioPlayer = () => {
 // this function woyld be for retrieving some metadata directly from within the stream itself,
 // not the alternate api endpoint currently in use 
 
-  // const fetchPlayerMetaData = async () => {
-    
+  // const fetchPlayerMetaData = async () => { 
   // }
   
   return (
