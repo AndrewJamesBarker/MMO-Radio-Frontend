@@ -7,7 +7,6 @@ import React, { useState, useEffect, useRef } from 'react';
 // currently grabbing the amount of active listeners, and the title of what is currently 
 // playing.
 
-
 const AudioPlayer = () => {
 
   const audioUrl = import.meta.env.VITE_RADIO_HOST;
@@ -45,7 +44,7 @@ const AudioPlayer = () => {
   return (
     <div className="basic-container player-container">
       <audio ref={audioRef} controls>
-        <source src={audioUrl} type="audio/mpeg" />
+        <source src='https://radio.brickmmo.com:8000/radio.mp3' type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
       <div>
