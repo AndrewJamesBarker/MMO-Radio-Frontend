@@ -38,7 +38,7 @@ html, body {
 }
 
 .player-container {
-  width: 100vw;
+  width: 95vw;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
