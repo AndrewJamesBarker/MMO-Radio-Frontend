@@ -209,8 +209,6 @@ audio::-moz-media-controls {
 }
 
 
-
-
 /* 
 Host stuff */
 
@@ -404,7 +402,7 @@ h4 {
 }
 
 .player-container {
-    width: 100vw;
+    width: 95vw;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
