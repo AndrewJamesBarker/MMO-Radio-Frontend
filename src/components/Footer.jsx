@@ -6,7 +6,7 @@ export default function Footer() {
   const currentDate = new Date().getFullYear();
   return (
     <footer className='flex-container footer'>
-      <small id="copywrite">All rights reserved © MMO-Radio {currentDate}</small>
+      {/* <small id="copywrite">All rights reserved © MMO-Radio {currentDate}</small> */}
       <NavFooter />
     </footer>
   )

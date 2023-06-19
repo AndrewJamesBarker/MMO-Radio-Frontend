@@ -47,13 +47,9 @@ const AudioPlayer = () => {
         <source src={audioUrl} type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
-      <div>
-      <p>
-        <span className='orange-text'>Now Playing:</span> {trackTitle}
-        </p>
-        <p>
-        <span className='orange-text'>Listener Count:</span> {listenerCount}
-        </p>
+      <div className='stream-data'>
+        <p><span className='orange-text'>Now Playing:</span> {trackTitle}</p>
+        <p><span className='orange-text'>Listener Count:</span> {listenerCount}</p>
       </div>
     </div>
   );
