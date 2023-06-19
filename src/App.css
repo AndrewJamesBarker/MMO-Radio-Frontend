@@ -1,5 +1,5 @@
 /* #root {
-  max-width: 100%;
+  margin: 0 auto;
 } */
 
 /* General */
@@ -20,10 +20,13 @@ html, body {
   color: white;
   font-family: 'Noto Sans', sans-serif;
   padding: .8rem;
-  max-width: 100%;
+
 }
 
+
+
 /* flex and containers */
+
 
 .container {
   background-color: rgb(32, 32, 32);
@@ -35,7 +38,7 @@ html, body {
 }
 
 .player-container {
-  width: 95vw;
+  width: 100vw;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
