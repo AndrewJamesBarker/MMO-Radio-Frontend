@@ -24,7 +24,11 @@ export default function SegmentData() {
     return <div></div>;
   }
 
-const recentSegment = segments[0];
+// make featured/recent segment random
+
+const randomSegment = Math.floor(Math.random() * segments.length + 1)
+
+const recentSegment = segments[randomSegment];
 
 const segmentDataObject = JSON.parse(recentSegment.segment_data);
 const headline = segmentDataObject.headline;
@@ -37,11 +41,9 @@ return (
   <div className="basic-container segmentSection">
      
     <h1 className="dailySegment">Featured <span className="orange-text">SEGMENT </span></h1>
-    {/* <img className="lego-block" src="images/orange_lego.png" width="100" alt="an orange six by two piece of lego"></img> */}
     <div key={recentSegment.id}>
       <h2 className="segmentTitle">'{recentSegment.title}'</h2>
       <img className="segmentImage" src={`https://reporters.brickmmo.com/storage/${recentSegment.image}`} width="450"></img>
-      {/* <h4 className="segmentHeadline">{headline}</h4> */}
       <p className="segment-content">
         '{joke || content}'
       </p>

@@ -21,7 +21,6 @@ export default function MainBody() {
         </div>
        
         <div >
-          {/* <AudioPlayer /> */}
           <SegmentData />
           <HostData />
         </div>

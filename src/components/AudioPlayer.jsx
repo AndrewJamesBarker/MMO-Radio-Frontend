@@ -16,7 +16,12 @@ const AudioPlayer = () => {
   const [listenerCount, setListenerCount] = useState(null);
   const [trackTitle, setTracktitle] = useState(null);
 
+
+
   useEffect(() => {
+
+    // this calls the endpoint every 5 sec to update the audio metadata
+    
     const intervalId = setInterval(fetchAudioMetaData, 5000);
     return () => clearInterval(intervalId);
   }, []);
@@ -35,11 +40,6 @@ const AudioPlayer = () => {
       console.error('error fetching audio data', error);
     }
   }
-// this function woyld be for retrieving some metadata directly from within the stream itself,
-// not the alternate api endpoint currently in use 
-
-  // const fetchPlayerMetaData = async () => { 
-  // }
   
   return (
     <div className="basic-container player-container">
