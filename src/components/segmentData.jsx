@@ -44,6 +44,7 @@ return (
     <div key={recentSegment.id}>
       <h2 className="segmentTitle">'{recentSegment.title}'</h2>
       <img className="segmentImage" src={`https://reporters.brickmmo.com/storage/${recentSegment.image}`} width="450"></img>
+      {/* conditional whether joke or segment */}
       <p className="segment-content">
         '{joke || content}'
       </p>
